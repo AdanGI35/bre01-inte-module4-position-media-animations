@@ -1,0 +1,206 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  font-family: "Athiti", sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Merienda", cursive;
+}
+
+.stars {
+  padding: 0 1rem;
+  color: #950000;
+  font-size: 1rem;
+}
+
+/* HEADER */
+
+.header {
+  grid-row: 1;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 46%,
+    rgba(235, 227, 219, 1) 100%
+  );
+  align-self: start;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.logo img {
+  width: 15rem;
+}
+
+.header h1 {
+  margin: 1rem 0 0 0;
+  font-size: 3rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+  align-items: center;
+}
+
+nav {
+  background-color: #ebe3db;
+}
+
+.header menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header li {
+  padding: 1rem 100%;
+  border-bottom: #4c4343 solid 2px;
+}
+.header li:first-child {
+  border-top: #4c4343 solid 2px;
+}
+.header li:hover {
+  background-color: #4c4343;
+}
+
+.header li:hover a {
+  color: white;
+}
+.header a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+
+.footer {
+  grid: 3;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: url("/instructions/ressources/images/footer-bg.jpg");
+  color: white;
+  background-color:grey;
+}
+
+.footer h3 {
+  margin: 0;
+  border-bottom: white dotted 1px;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.footer a {
+  color: white;
+  margin: 0 1.5rem;
+}
+.footer i {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+
+@media screen and (min-width:780px) {
+  .header menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .header li {
+    padding: 1rem;
+    border:none;
+  }
+  .header li:first-child {
+    border:none;
+  }
+  .header li:hover {
+    background-color: #4c4343;
+  }
+  
+  .header li:hover a {
+    color: white;
+  }
+  .header a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer section{
+    min-width: 20rem;
+  }
+}
+
+@media screen and (min-width:1100px) {
+  .header{
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header > div{
+    display: flex;
+    align-items: center;
+  }
+  .header h1{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: start;
+    padding: 0;
+  }
+
+  nav {
+    background-color: transparent;
+    display: flex;
+    width: 40%;
+  }
+  .header menu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width:100%
+  }
+  .header li {
+    background-color: #ebe3db;
+  }
+
+}
