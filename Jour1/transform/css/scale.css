@@ -1,0 +1,50 @@
+
+.scale {
+	position: relative;
+	text-align: center;
+	
+	padding: 15px;
+	border-radius: 50%;
+	border: 10px solid #DD5735;
+	margin: 0 auto;
+	
+}
+
+.scale figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 5s;
+}
+
+.scale img {
+	vertical-align: top;
+	transition: all 5s;
+}
+
+.scale a {
+	display: block;
+	text-decoration: none;
+	color: #DD5735;
+ }
+
+
+.scale:hover figcaption {
+	opacity: 1;
+	transform: scale(2) translateY(-.7em);
+}
+
+.scale:hover img {
+	transform: scale(0.6);
+}
+
+.centre {
+	min-height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+

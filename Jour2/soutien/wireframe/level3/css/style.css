@@ -1,0 +1,140 @@
+/******************************************************************************/
+/*                               Généralités                                  */
+/******************************************************************************/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+
+/******************************************************************************/
+/*                                  Layout                                    */
+/******************************************************************************/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border: 1px solid black;
+}
+.extra-footer {
+    display:flex;
+    justify-content: space-between;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+div, section, p {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+
+/******************************************************************************/
+/*                                  Header                                    */
+/******************************************************************************/
+.brand-tools {
+    display:flex;
+    justify-content: space-between;
+}
+/* User tools */
+.user-tools {
+    display:flex;
+    justify-content: space-between;
+}
+.user-tools ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.user-tools li {
+    padding: 0.5em 1em;
+}
+/* shop tools */
+.shop-tools {
+    display:flex;
+    justify-content: space-between;
+}
+.shop-tools .shipping {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    text-align: center;
+}
+.shop-tools .site-title {
+    
+}
+.shop-tools  .custom {
+    
+}
+
+.navigation {
+    display:flex;
+    justify-content: space-between;
+}
+
+.navigation ul{
+    display:flex;
+    list-style:none;
+    padding:0;
+    margin:0;
+    
+}
+
+.navigation li{
+    padding:0.5em 0.5em;
+}
+#searchbar{
+    display:flex;
+    padding:0;
+    margin:0;
+}
+
+.main-navigation{
+    display:flex;
+    justify-content:space-around;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation-menu li:first-of-type{
+    background-color:brown;
+}
+
+.main-shop{
+    display:flex;
+    padding:0;
+    margin:0;
+}
+.text-shop{
+    display:flex;
+    justify-content:space-between;
+}

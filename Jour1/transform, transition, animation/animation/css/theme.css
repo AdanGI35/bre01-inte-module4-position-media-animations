@@ -1,0 +1,34 @@
+.cerclerouge{
+  background:white;
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid red; 
+}
+.cerclebleu{
+  background:white;
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid blue; 
+}
+
+.cerclejaune{
+  background:white;
+  border-radius:50%;
+  width:160px;
+  height:160px;
+  border:2px solid yellow; 
+}
+@keyframes newspaper {
+	from {
+		transform: scale(0) rotate(720deg);
+	}
+	to {
+		transform: scale(1) rotate(0);
+		background-color: #3cf;
+	}
+}
+.test-animation {
+	animation: newspaper 1s both;
+}

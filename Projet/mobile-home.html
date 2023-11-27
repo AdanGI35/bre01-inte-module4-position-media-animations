@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
+		<title>Page d'accueil Freshly restaurant</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	    <header>
+	        <div class="container">
+				<a href="index.html">
+					<img src="instructions/ressources/images/logo.png" alt="Logo de Freshly restaurant">
+				</a>
+				<h1>Freshly Restaurant</h1>
+				<nav>
+					<ul>
+						<li><a href="#" class="current">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Menus</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+	    </header>
+	    <main>
+	        <div class="bxslider">
+				<div><img src="instructions/ressources/images/slider-01.jpg" alt="" title="Repas1"></div>
+				<div><img src="instructions/ressources/images/slider-02.jpg" alt="" title="Repas2"></div>
+				<div><img src="instructions/ressources/images/slider-03.jpg" alt="" title="Repas3"></div>
+				<div><img src="instructions/ressources/images/slider-04.jpg" alt="" title="Repas4"></div>
+			</div>
+	        <section>
+	            <article>
+	                <h2>Welcome to Freshly Restaurant</h2>
+	                <img src="instructions/ressources/images/location.jpg" alt="location"/>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, error, ipsum, numquam, unde commodi harum vero nesciunt praesentium ipsa dolorum architecto eius veritatis laborum quo quisquam perspiciatis cumque necessitatibus repellendus.</p>
+	                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, velit impedit numquam illo quae id quis rem sunt sit modi at possimus error odit iure minima fugit architecto quidem omnis aliquid harum tempore amet quam.</p>
+	            </article>
+	        </section>
+	    </main>
+	    
+	<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+	    $(document).ready(function(){
+	    	$('.bxslider').bxSlider({
+	    		mode: 'fade',
+    			captions: true
+	    	});
+	    });
+  	</script>
+	</body>
+</html>
